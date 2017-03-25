@@ -20,6 +20,17 @@ require "sinatra/reloader" if development?
 
 require 'erb'
 
+# User authentication
+require "dm-core"
+require "dm-migrations"
+require "digest/sha1"
+require 'rack-flash'
+require "sinatra-authentication"
+DataMapper.setup(:default, "postgres://localhost:5432/sports-karma_development")
+DataMapper.auto_upgrade!
+use Rack::Session::Cookie, :secret => 'superdupersecret'
+use Rack::Flash
+
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 

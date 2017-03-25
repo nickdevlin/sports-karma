@@ -1,5 +1,8 @@
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
+  <% if flash[:notice] %>
+    <p><%= flash[:notice] %></p>
+  <% end %>
   <p>Hello, baseball people!</p>
 <form >
 <input type="text" name="player">
