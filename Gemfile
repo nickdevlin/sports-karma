@@ -18,6 +18,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'stattleship-ruby'
+
 group :test do
   gem 'faker'
   gem 'rspec'
