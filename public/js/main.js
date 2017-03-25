@@ -45,8 +45,21 @@ $('.pledge-button').on('click', function() {
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function dropdownMenu() {
-    document.getElementById('myDropdown').classList.toggle('show');
+function dropdownTeam() {
+    document.getElementById('myDropdown-team').classList.toggle('show');
+}
+
+$('.team-name').on('click', function() {
+  var selected = $(this)[0].id
+  $('.team-button').html(selected)
+});
+
+function dropdownPlayer() {
+    document.getElementById('myDropdown-player').classList.toggle('show');
+}
+
+function dropdownStat() {
+    document.getElementById('myDropdown-stat').classList.toggle('show');
 }
 
 // Close the dropdown if the user clicks outside of it

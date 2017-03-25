@@ -34,6 +34,43 @@
                 </div>
             </div>
             <div class='pledge-list'>
+
+<ul class="pledge-item">
+      <li class="team">
+        <div class="dropdown">
+            <button onclick="dropdownTeam()" class="dropbtn team-button">Team</button>
+            <div id="myDropdown-team" class="dropdown-content">
+                <% @teams.each do |team| %>
+                    <a href="#"><button class='team-name' id= <%= team.nickname %>><%= team.nickname %></button></a>
+                <% end %>
+            </div>
+        </div>
+      </li>
+      <li class="player">
+        <div class="dropdown">
+            <button onclick="dropdownPlayer()" class="dropbtn">Player</button>
+            <div id="myDropdown-player" class="dropdown-content">
+                <% @players.each do |player| %>
+                    <a href="#"><button class='team-name'><%= player.player.name %></button></a>
+                <% end %>
+            </div>
+        </div>
+      </li>
+      <li class="stat">
+        <div class="dropdown">
+            <button onclick="dropdownStat()" class="dropbtn">Stat</button>
+            <div id="myDropdown-stat" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+      </li>
+      <li class="dollars"><input type="text" placeholder="$$$" size="5"></input></li>
+      <li class="charity"><input type="text" placeholder="Charity" size="5"></input></li>
+      <li class="add-pledge"><button class="addpledge-button">Add Pledge!</button></li>
+  </ul>
+
                 <ul class='pledge-item'>
                     <li class='team'>Team</li>
                     <li class='player'>Player</li>
