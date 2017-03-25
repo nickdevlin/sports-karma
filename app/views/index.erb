@@ -1,7 +1,17 @@
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
   <p>Hello, baseball people!</p>
-
+<form >
+<input type="text" name="player">
+</form>
+<%= @stats.total %>
+<%= @stats.player.name %>
+<% @teams.each do |team| %>
+<%= team.nickname %><br>
+<% end %>
+<% @players.each do |p| %>
+<%= p.name %><br>
+<% end %>
   <table>
     <tr>
       <th>File Description</th>
