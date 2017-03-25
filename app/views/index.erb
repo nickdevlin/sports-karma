@@ -51,7 +51,7 @@
             <button onclick="dropdownPlayer()" class="dropbtn">Player</button>
             <div id="myDropdown-player" class="dropdown-content">
                 <% @players.each do |player| %>
-                    <a href="#"><button class='team-name'><%= player.player.name %></button></a>
+                    <a href="#"><button class='team-name'></button></a>
                 <% end %>
             </div>
         </div>
