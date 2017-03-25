@@ -2,7 +2,7 @@
 <ul>
 <% @pledges.each do |pledges| %>
   <li>
-    <%= pledges.player_id %>
+    <%= pledges.player_id %> <%= pledges.stat_category %> <%= pledges.donation_amount %>
   </li>
 <% end %>
 </ul>
