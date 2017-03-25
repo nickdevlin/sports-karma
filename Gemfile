@@ -20,6 +20,12 @@ gem 'shotgun'
 
 gem 'stattleship-ruby'
 
+# User authentication
+gem 'sinatra-authentication'
+gem 'dm-postgres-adapter'
+gem 'rack-flash3'
+gem 'haml'
+
 group :test do
   gem 'faker'
   gem 'rspec'
