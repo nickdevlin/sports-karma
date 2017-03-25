@@ -1,0 +1,9 @@
+<h3>All Pledges</h3>
+<ul>
+<% @pledges.each do |pledges| %>
+  <li>
+    <%= pledges.player_id %>
+  </li>
+<% end %>
+</ul>
+<a href="/">Back to Home</a>
