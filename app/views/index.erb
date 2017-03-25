@@ -4,4 +4,13 @@
     <p><%= flash[:notice] %></p>
   <% end %>
   <p>Hello, baseball people!</p>
+<%= @stats.total %>
+<%= @stats.player.name %>
+<% @teams.each do |team| %>
+<%= team.nickname %><br>
+<% end %>
+<% @players.each do |p| %>
+<%= p.name %><br>
+<% end %>
+ 
 </div>
