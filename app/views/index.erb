@@ -1,16 +1,83 @@
-<div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <% if flash[:notice] %>
-    <p><%= flash[:notice] %></p>
-  <% end %>
-  <p>Hello, baseball people!</p>
-<%= @stats.total %>
-<%= @stats.player.name %>
-<% @teams.each do |team| %>
-<%= team.nickname %><br>
-<% end %>
-<% @players.each do |p| %>
-<%= p.name %><br>
-<% end %>
- 
-</div>
+<!doctype html>
+<html class='no-js' lang=''>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <title>Baseball Hack Day</title>
+    <meta name='description' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' href='css/main.css'>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class='browserupgrade'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <div class='logo'>Sports Karma</div>
+        <div class='account'>Account</div>
+    </header>
+
+    <div class='main-container'>
+        <div class='main'>
+            <div class='main-header'>
+                <div class='header-account'>
+                    <h1>Alex's Account</h1>
+                </div>
+                <div class='new-pledge'>
+                    <button class='pledge-button'>Make a New Pledge</button>
+                </div>
+            </div>
+            <div class='pledge-list'>
+                <ul class='pledge-item'>
+                    <li class='team'>Team</li>
+                    <li class='player'>Player</li>
+                    <li class='stat'>Stat</li>
+                    <li class='dollars'>$$$$</li>
+                    <li class='charity'>Charity</li>
+                    <li class='delete'><button class='delete-button'>X</button></li>
+                </ul>
+                <ul class='pledge-item'>
+                    <li class='team'>Team</li>
+                    <li class='player'>Player</li>
+                    <li class='stat'>Stat</li>
+                    <li class='dollars'>$$$$</li>
+                    <li class='charity'>Charity</li>
+                    <li class='delete'><button class='delete-button'>X</button></li>
+                </ul>
+                <ul class='pledge-item'>
+                    <li class='team'>Team</li>
+                    <li class='player'>Player</li>
+                    <li class='stat'>Stat</li>
+                    <li class='dollars'>$$$$</li>
+                    <li class='charity'>Charity</li>
+                    <li class='delete'><button class='delete-button'>X</button></li>
+                </ul>
+                <ul class='pledge-item'>
+                    <li class='team'>Team</li>
+                    <li class='player'>Player</li>
+                    <li class='stat'>Stat</li>
+                    <li class='dollars'>$$$$</li>
+                    <li class='charity'>Charity</li>
+                    <li class='delete'><button class='delete-button'>X</button></li>
+                </ul>
+                <ul class='pledge-item'>
+                    <li class='team'>Team</li>
+                    <li class='player'>Player</li>
+                    <li class='stat'>Stat</li>
+                    <li class='dollars'>$$$$</li>
+                    <li class='charity'>Charity</li>
+                    <li class='delete'><button class='delete-button'>X</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
